@@ -1,39 +1,27 @@
-// import React, { useState } from 'react'
-
-// const App = () => {
-
-//   const [aditya, setaditya] = useState("Bhai")
-//   const handchange = () => {
-  
-//     useState
-//   }
-
-
-
-//   return (
-//     <div>
-//       <h1 onClick={handchange}>mere dosto</h1>
-//       <h1>{aditya}</h1>
-
-//     </div>
-//   )
-// }
-
-// export default App ;
-
-
 import React, { useState } from 'react'
 
 const App = () => {
 
-  let a = 30;
-   
-  const [number, setnumber] = useState(30)
 
+  const [name, setname] = useState("Hello Mera Name")
+  const hendchange = () => {
+
+    setname(name + " ADITYA TRIPATHI Hai")
+
+  }
 
   return (
-    <div onClick={hedingchang}>App</div>
+    <div>
+
+      <button onClick={hendchange} >Create Your Full Name</button>
+
+      <h1>{name}</h1>
+
+
+    </div>
   )
+
 }
 
-export default App
+
+export default App;
