@@ -43,7 +43,7 @@ const App = () => {
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
         <input type="text" value={age} onChange={e => setAge(e.target.value)} />
         <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
-        <button onClick={e => handelclick(e)}>submit</button>
+        <button onClick={e => handelclick(e)}>Submit</button>
       </form>
 
       <h1>{data.name}</h1>
