@@ -15,6 +15,7 @@ const App = () => {
   const [age, setAge] = useState('')
   const [email, setEmail] = useState('')
   const [data, setdata] = useState({})
+  
 
   let clutter = ''
   const handelclick = (e) => {
@@ -39,11 +40,11 @@ const App = () => {
     // }
 
     <>
-      <form action="">
+      <form class='text-black' action="">
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
         <input type="text" value={age} onChange={e => setAge(e.target.value)} />
         <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
-        <button onClick={e => handelclick(e)}>Submit</button>
+        <button class='hover:bg-green-500 hover:text-black  text-white' onClick={e => handelclick(e)}>Submit</button>
       </form>
 
       <h1>{data.name}</h1>
