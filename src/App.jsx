@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
 
@@ -33,18 +34,25 @@ const App = () => {
 
     //       <h1>{name}</h1>
 
-
     //     </div>
     //   )
-
     // }
 
     <>
-      <form class='text-black' action="">
+
+      {/* <Routes>
+
+        <Route path='/' element= {<Home />} />    
+
+      </Routes> */}
+
+<h1 className='bg-red-300'>rajdka</h1> 
+
+      <form  className='bg-slate-500 p-10 flex gap-2' action="">
         <input type="text" value={name} onChange={e => setName(e.target.value)} />
         <input type="text" value={age} onChange={e => setAge(e.target.value)} />
         <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
-        <button class='hover:bg-green-500 hover:text-black  text-white' onClick={e => handelclick(e)}>Submit</button>
+        <button className='hover:bg-green-500 hover:text-black' onClick={e => handelclick(e)}>Submit</button>
       </form>
 
       <h1>{data.name}</h1>
